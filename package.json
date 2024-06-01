@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon src/index"
+    "dev": "nodemon src/index"
   },
   "keywords": [
     "backend",
@@ -17,6 +17,7 @@
   "author": "Yash pratap kulshrestha",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.2"
+    "nodemon": "^3.1.2",
+    "prettier": "^3.2.5"
   }
 }
