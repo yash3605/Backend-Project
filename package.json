@@ -2,10 +2,21 @@
   "name": "project",
   "version": "1.0.0",
   "description": "a backend project for practice",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon src/index"
   },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
   "author": "Yash pratap kulshrestha",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
 }
