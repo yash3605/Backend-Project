@@ -219,7 +219,7 @@ const refreshAccessToken = asyncHandler( async(req,res) => {
 const changeCurrentPassword = asyncHandler( async(req,res) => {
     const {oldPassword, newPassword} = req.body
 
-    const user = await User.findById(req.user?._idid)
+    const user = await User.findById(req.user?._id)
     const isPasswordCorrect = await user.isPasswordCorrect(oldPassword)
 
     if(!isPasswordCorrect){
@@ -441,7 +441,7 @@ const getWatchHistory = asyncHandler( async(req,res) => {
 
     return res
     .status(200)
-    .json(new ApiResponse(200, user[0]?.watchHistory, "Watch history fetched successfully"))
+    .json(new ApiResponse(200, "Watch history fetched successfully", user[0]?.watchHistory))
 })
 
 
